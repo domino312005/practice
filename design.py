@@ -945,9 +945,9 @@ class Ui_MainWindow(object):
             qformat = QImage.Format_RGB888
         image = QImage(image.data, image.shape[1], image.shape[0], image.strides[0], qformat)
         image = image.rgbSwapped()
-        self.imager.setPixmap(QPixmap.fromImage(image))  # CHANGE: использует QLabel 'imager'
-        self.imager.setAlignment(QtCore.Qt.AlignCenter)  # CHANGE: центрирует изображение
-        # END CHANGE
+        self.imager.setPixmap(QPixmap.fromImage(image))
+        self.imager.setAlignment(QtCore.Qt.AlignCenter)
+
 
     def check_image_loaded(self):
         """
