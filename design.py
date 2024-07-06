@@ -947,7 +947,7 @@ class Ui_MainWindow(object):
         image = image.rgbSwapped()
         self.imager.setPixmap(QPixmap.fromImage(image))  # CHANGE: использует QLabel 'imager'
         self.imager.setAlignment(QtCore.Qt.AlignCenter)  # CHANGE: центрирует изображение
-            # END CHANGE
+        # END CHANGE
 
     def check_image_loaded(self):
         """
